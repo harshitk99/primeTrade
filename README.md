@@ -71,9 +71,9 @@ To scale this application for production traffic, the following concepts can be 
 
 ## Scalability Notes & Future Improvements To scale this application for production traffic, the following concepts can be applied:
 
-Microservices Architecture: If the business logic grows, we can split this monolithic Express app into microservices (e.g., Auth Service, Product Service, Notification Service) communicating via gRPC or message queues like RabbitMQ/Kafka.
-Caching: Integrate Redis to cache frequent read-heavy requests (like retrieving all public products). This drastically reduces MongoDB load.
-Database Scaling: Implement MongoDB replica sets for high availability and sharding for horizontal scaling of the dataset.
-Load Balancing: Use Nginx or AWS Application Load Balancer (ALB) to distribute incoming traffic across multiple instances of the Node.js backend.
-Docker & Orchestration: Containerize the frontend, backend, and database using Docker, and deploy a cluster using Kubernetes or AWS ECS for automated scaling and self-healing.
-Rate Limiting: Add an API Gateway (like Kong or AWS API Gateway) or express-rate-limit to prevent DDoS attacks and abusive scraping.
+-**Microservices Architecture:** If the business logic grows, we can split this monolithic Express app into microservices (e.g., Auth Service, Product Service, Notification Service) communicating via gRPC or message queues like RabbitMQ/Kafka.
+-**Caching:** Integrate Redis to cache frequent read-heavy requests (like retrieving all public products). This drastically reduces MongoDB load.
+-**Database Scaling:** Implement MongoDB replica sets for high availability and sharding for horizontal scaling of the dataset.
+-**Load Balancing:** Use Nginx or AWS Application Load Balancer (ALB) to distribute incoming traffic across multiple instances of the Node.js backend.
+-**Docker & Orchestration:** Containerize the frontend, backend, and database using Docker, and deploy a cluster using Kubernetes or AWS ECS for automated scaling and self-healing.
+-**Rate Limiting:** Add an API Gateway (like Kong or AWS API Gateway) or express-rate-limit to prevent DDoS attacks and abusive scraping.
