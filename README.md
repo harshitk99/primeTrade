@@ -82,3 +82,7 @@ To scale this application for production traffic, the following concepts can be 
 -**Docker & Orchestration:** Containerize the frontend, backend, and database using Docker, and deploy a cluster using Kubernetes or AWS ECS for automated scaling and self-healing.
 
 -**Rate Limiting:** Add an API Gateway (like Kong or AWS API Gateway) or express-rate-limit to prevent DDoS attacks and abusive scraping.
+
+## Swagger 
+
+To read the api-docs go to `https:http://localhost:5000/api-docs`
